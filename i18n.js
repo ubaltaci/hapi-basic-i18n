@@ -1,4 +1,5 @@
 
+var path = require("path");
 
 function formatLocalization(localeString, REPLACEMENTS) {
 
