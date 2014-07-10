@@ -1,6 +1,6 @@
 {
     "name": "hapi-basic-i18n",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "hapi-basic-i18n just __",
     "main": "index.js",
     "engines": {
