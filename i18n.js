@@ -18,6 +18,12 @@ module.exports = function(LANG_CODE, locale_path) {
         if ( REPLACEMENTS && !Array.isArray(REPLACEMENTS) ) {
             REPLACEMENTS = [REPLACEMENTS];
         }
-        return formatLocalization(lang_file[STRING_CODE], REPLACEMENTS);
+        if ( lang_file[STRING_CODE] ) {
+            return formatLocalization(lang_file[STRING_CODE], REPLACEMENTS);
+        }
+        else {
+            return formatLocalization(STRING_CODE, REPLACEMENTS);
+        }
+        
     }
 };
