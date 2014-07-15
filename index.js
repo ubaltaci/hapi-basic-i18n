@@ -18,7 +18,7 @@ exports.register = function (plugin, options, next) {
 
     options = Hoek.applyToDefaults(internals.defaults, options);
 
-    plugin.ext('onPreResponse', function (request, cb) {
+    plugin.ext("onPreResponse", function (request, cb) {
         var language = "EN";
         if ( request.session && request.session.get ) {
             language = request.session.get("language") || "EN";
