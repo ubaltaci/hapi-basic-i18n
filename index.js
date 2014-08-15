@@ -29,7 +29,7 @@ exports.register = function (plugin, options, next) {
         // if response type view!
         if ( response.variety && response.variety === 'view' ) {
             response.source.context = response.source.context || {};
-            response.source.context.__ = i18n(language, options.locale_path);
+            response.source.context.i18n = i18n(language, options.locale_path);
         }
         return cb();
     });

@@ -24,6 +24,5 @@ module.exports = function(LANG_CODE, locale_path) {
         else {
             return formatLocalization(STRING_CODE, REPLACEMENTS);
         }
-        
     }
 };
