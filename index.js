@@ -5,7 +5,6 @@
  *
  */
 
-var path = require("path");
 var Hoek = require("hoek");
 var i18n = require("./i18n");
 
