@@ -1,6 +1,6 @@
 ##hapi-basic-i18n
 
-* Plugin Options w/ registration;
+* Plugin options w/ registration;
 
 	```js
 	server.pack.register([
@@ -33,5 +33,23 @@
 
 
 
+* Simply
+
+	```js
+	// en.js
+	module.exports = {
+		"Hello": "Hello {0}!",
+	};
+	
+	// in route handler
+	console.log(request.i18n("Hello", "John"));
+	
+	// in view 
+	{{i18n "Hello" "John"}}
+	
+	// Both outputs are "Hello John!"
+	```
+	
+	
 
 

@@ -10,7 +10,7 @@ var i18n = require("./i18n");
 
 var internals = {};
 internals.defaults = {
-    locale_path: "./config/language",
+    locale_path: "./config/languages",
     cookie_name: "language",
     default_language: "EN",
     available_languages: ["EN"]
