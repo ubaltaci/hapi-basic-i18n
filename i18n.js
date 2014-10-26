@@ -1,5 +1,5 @@
 
-var path = require("path");
+var Path = require("path");
 
 function formatLocalization(localeString, REPLACEMENTS) {
 
@@ -11,8 +11,13 @@ function formatLocalization(localeString, REPLACEMENTS) {
 }
 
 module.exports = function(LANG_CODE, locale_path) {
-    LANG_CODE = LANG_CODE || "EN";
-    var lang_file = require(path.join(locale_path, LANG_CODE.toLocaleLowerCase() + ".js"));
+
+    try {
+        var lang_file = require(Path.join(locale_path, LANG_CODE.toLocaleLowerCase() + ".js"));
+    }
+    catch(e) {
+        throw new Error("For " + LANG_CODE + "; there is not any file in " + Path.join(locale_path, LANG_CODE.toLocaleLowerCase() + ".js"));
+    }
 
     return function(STRING_CODE, REPLACEMENTS) {
 

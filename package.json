@@ -1,7 +1,7 @@
 {
     "name": "hapi-basic-i18n",
-    "version": "0.2.1",
-    "description": "hapi-basic-i18n just __",
+    "version": "0.3.0",
+    "description": "hapi-basic-i18n just i18n",
     "main": "index.js",
     "engines": {
         "node": ">=0.10.22"
