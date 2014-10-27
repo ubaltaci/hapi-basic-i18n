@@ -61,7 +61,5 @@ exports.register = function (plugin, options, next) {
 };
 
 exports.register.attributes = {
-    name: "hapi-basic-i18n",
-    version: "0.0.1",
-    multiple: false
+    pkg: require("./package.json")
 };
