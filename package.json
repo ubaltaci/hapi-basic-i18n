@@ -7,10 +7,10 @@
     "node": ">=0.11.14"
   },
   "dependencies": {
-    "hoek": "^2.8.1"
+    "hoek": "^2.9.0"
   },
   "peerDependencies": {
-    "hapi": ">=7.0.0"
+    "hapi": ">=8.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
