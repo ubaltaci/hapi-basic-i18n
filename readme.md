@@ -3,9 +3,9 @@
 * Plugin options w/ registration;
 
 	```js
-	server.pack.register([
+	server.register([
     {
-        plugin: require("hapi-basic-i18n"),
+        register: require("hapi-basic-i18n"),
         options: {
 			locale_path: "./config/language",
 			cookie_name: "language",
