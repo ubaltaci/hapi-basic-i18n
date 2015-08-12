@@ -7,7 +7,7 @@
     {
         register: require("hapi-basic-i18n"),
         options: {
-			locale_path: "./config/language",
+			locale_path: "<absolutePath>",
 			cookie_name: "language",
 			default_language: "EN",
 			available_languages: ["EN"]
