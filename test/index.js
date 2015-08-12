@@ -34,7 +34,7 @@ describe("Hapi Basic i18n", function () {
         server.register({
             register: require("../"),
             options: {
-                locale_path: "../test/languages",
+                locale_path: "./test/languages",
                 default_language: "EN",
                 available_languages: ["EN", "TR"]
             }
@@ -79,7 +79,7 @@ describe("Hapi Basic i18n", function () {
         server.register({
             register: require("../"),
             options: {
-                locale_path: "../test/languages",
+                locale_path: "./test/languages",
                 default_language: "EN",
                 available_languages: ["TR"]
             }
@@ -114,7 +114,7 @@ describe("Hapi Basic i18n", function () {
         server.register({
             register: require("../"),
             options: {
-                locale_path: "../test/languages",
+                locale_path: "./test/languages",
                 default_language: "TR",
                 available_languages: ["EN", "TR"]
             }
@@ -165,7 +165,7 @@ describe("Hapi Basic i18n", function () {
         server.register({
             register: require("../"),
             options: {
-                locale_path: "../test/languages",
+                locale_path: "./test/languages",
                 default_language: "EN",
                 available_languages: ["EN", "TR"]
             }
